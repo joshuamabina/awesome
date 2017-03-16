@@ -1,5 +1,26 @@
 # Style Guide for Git
 
+## Branches
+
+- Choosen names must be short and descriptive.
+
+	# good
+	$ git checkout -b laravel-passport-migration
+
+	# bad - too vague
+	$ git checkout -b fix-authentication
+
+- Whenever possible, names should include a suffix corresponding to the issue identifier. 
+
+	# GitHub issue #10
+	$ git checkout -b laravel-passport-migration-10
+
+- Use *dashes* to separate words.
+
+- Branches must be deleted from remotes after being merged.
+
+> **ProTip:** Use `git branch --merged | grep -v "\*"` to list merged branches.
+
 ## Commits
 
 - Each commit should be a single logical change. Don't make several logical changes in one commit. For example, if a patch fixes a bug and optimizes the perfomance of a feature, split it into two separate commits.
