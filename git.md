@@ -3,17 +3,19 @@
 ## Branches
 
 - Choosen names must be short and descriptive.
-
+	```bash
 	# good
 	$ git checkout -b laravel-passport-migration
 
 	# bad - too vague
 	$ git checkout -b fix-authentication
+	```
 
 - Whenever possible, names should include a suffix corresponding to the issue identifier. 
-
+	```bash
 	# GitHub issue #10
 	$ git checkout -b laravel-passport-migration-10
+	```
 
 - Use *dashes* to separate words.
 
@@ -34,12 +36,13 @@
 ### Messages
 
 - Use the editor, not the terminal, when writing a commit message
-
+	```bash
 	# good 
 	$ git commit
 
 	# bad
-	$ git commit -m "Quick fix" 
+	$ git commit -m "Quick fix"
+	```
 
 Committing from the terminal encourages a mindset of having to fit everything in one line, which *almost* always results into a non-informative, ambigous, useless commit messages.
 
