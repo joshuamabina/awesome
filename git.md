@@ -53,3 +53,28 @@ Committing from the terminal encourages a mindset of having to fit everything in
 It should also provide any pointers to related resources.
 
 Ultimately, when writing a commit message, think about what you need to know if you ran across the commit in a year from now.
+
+## Merging
+
+> **ProTip:** Altering published history is a common source of problems for anyone working on the project.
+
+- Never rewrite history of the **master** branch or any other special branches.
+
+- Before you merge your branch, rebase onto the branch its going to be merged to.
+
+	```bash
+	[my-branch] $ git fetch
+	[my-branch] $ git rebase origin/master
+	[my-branch] $ git checkout master
+
+	[master] $ git merge my-branch
+	```
+
+- If your branch contains more than one commit, do not merge with a fast-forward.
+	```bash
+	# good 
+	$ git merge --no-ff my-branch 
+
+	# bad
+	$ git merge my-branch
+	```
