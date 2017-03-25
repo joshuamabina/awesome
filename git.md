@@ -112,3 +112,7 @@ footer
 	# bad
 	$ git merge my-branch
 	```
+## Credits
+
+- [Git Style Guide by @agisanast](https://github.com/agis-/git-style-guide)
+- [Git Style Guide by Udacity](https://udacity.github.io/git-styleguide/) 
