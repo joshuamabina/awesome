@@ -46,13 +46,47 @@
 
 Committing from the terminal encourages a mindset of having to fit everything in one line, which *almost* always results into a non-informative, ambigous, useless commit messages.
 
-- The first line of the message should be *descriptive* yet *succint*. Ideally, it should be no longer than 50 characters. It should be capitalized and written in imperative present tense. It should not end with a period, because it is essentially a commit title. 
+```bash
+type: title
 
-- The commit title is followed with a blank line and more thorough description. It should be wrapped in *72 characters* and explain *why* the change is needed, *how* it addresses the issue and what *side-effects* it might have.
+body
 
-It should also provide any pointers to related resources.
+footer
+```
 
-Ultimately, when writing a commit message, think about what you need to know if you ran across the commit in a year from now.
+- The first line of the message contains the `type` and `title` summarizing all the changes made. 
+
+	- It must be **descriptive** yet **succint**.
+
+	- It should not end with a period.
+
+	- It should be no longer than 50 characters. 
+
+	- The title must be capitalized and written in imperative present tense.
+
+	- The type can be one of these:
+
+		- **fix:** fix bug issue 
+		- **feat:** add a new feature
+		- **docs:** change documentation
+		- **style:** format code; no code change
+		- **refactor:** refactor production code
+		- **test:** refactor tests; no code change 
+		- **chore:** update build tasks, configs, etc; no code change
+
+- The commit title should be followed with a blank line and more thorough description. 
+
+	- It should be wrapped in *72 characters* and explain:
+
+		- **why** the change is needed 
+		- **how** it addresses the issue 
+		- **what** *side-effects* it might have
+
+	- It should also provide any pointers to related resources.
+
+- The footer is also optional and is used to reference issue tracker IDs.
+
+> **ProTip:** Ultimately, think about what you need to know if you ran across the commit in a year from now.
 
 ## Merging
 
