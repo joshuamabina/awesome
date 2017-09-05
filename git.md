@@ -64,8 +64,8 @@
 	#bad
 	$ git commit -m "Quick fix"
 	```
-	> **ProTip** Committing from the terminal encourages a mindset of having to fit everything in one line,
-	> which *almost* always results into a non-informative, ambigous, useless commit messages.
+> **ProTip** Committing from the terminal encourages a mindset of having to fit everything in one line,
+> which *almost* always results into a non-informative, ambigous, useless commit messages.
 
 - The first line of the message contains the `type` and `title` summarizing all the changes made.
 
