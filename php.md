@@ -21,35 +21,88 @@ The guide follows the PSR-2 coding standard and the PSR-4 autoloading standard.
 
 ### General
 
-- The first line of all `.php` files should be exactly "`<?php`".
-- Never use the closing PHP tag (`?>`).
-- Never use PHP short tags.
+#### PHP Tags
 
-	```php
-	#bad
-	<?= //...
+The first line of all `.php` files should be exactly "`<?php`".
 
-	#good
-	<?php //...
-	```
+Never use the closing PHP tag (`?>`).
 
-- All files must only use `UTF-8`, without `BOM`.
-- Always use UTC timezone to store date and time.
-- Every `.php` library file should contain one class exactly.
-- Every `.php` library file should be side effect free.
-- Singular words (e.g. item, stylesheet, user) should be used throughout files and code instead of plurals.
-- Avoid Hungarian Notation, where file/variable names that indicate their type.
+Never use PHP short tags.
 
-	```php
-	#bad
-	bIsHungarian = true
+```php
+#bad
+<?= //...
 
-	#good
-	isHungarian = false
-	```
+#good
+<?php //...
+```
+
+#### Character Encoding
+
+All files must only use `UTF-8`, without `BOM`.
+
+#### Date and Time
+
+> **Coordinate Universal Time** (French: *Temps universel coordonne*), abbreviated to **UTC**,
+is the primary time standard by which the world regulates clocks and time. [Read more](3)
+
+Always use UTC timezone to store date and time.
+
+#### Files
+
+> Every `.php` file should be side effect free.
+
+**A file should declare new symbols** (classes, functions, constants, etc.) and cause no side effects,
+**or should execute logic with side effects**, but **should not do both**.
+
+> Every `.php` php file should only contain one class declaration.
+
+The following is an example of what to avoid.
+
+```php
+
+//side effects; changes ini settings
+ini_set('display_errors', '1');
+
+//declaration
+function getCurrentTime()
+{
+	//
+}
+
+//class declaration
+class Product
+{
+	//
+}
+
+//another class declaration
+class ProductCategory
+{
+	//
+}
+
+//side effects; includes a file
+include "helpers.php";
+```
+
+The following is an example of what to emulate.
+
+```php
+//conditional declaration is *not* a side effect
+if (function_exists('getCurrentTime')) {
+
+	function getCurrentTime()
+	{
+		//
+	}
+}
+```
+
+
 - Never use global variables, except for superglobals.
 - Properties should always be declared.
-- Variables should always be declared at the top of the block they are used in.
+- Variables SHOULD always be declared at the top of the block they are used in.
 
 <div id="indentation-whitespace"></div>
 
@@ -157,3 +210,4 @@ To use PHP-CS-Fixer:
 
 [1]: http://cs.sensiolabs.org
 [2]: http://cs.sensiolabs.org/#helpers
+[3]: https://en.wikipedia.org/wiki/Coordinated_Universal_Time
