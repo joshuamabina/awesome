@@ -15,7 +15,6 @@ The guide follows the PSR-2 coding standard and the PSR-4 autoloading standard.
 7. [Commenting](#commenting)
 8. [Data structures](#data-structures)
 9. [PHP Coding Standards Fixer](#php-cs-fixer)
-10. [Credits](#credits)
 
 
 <div id="general"></div>
@@ -155,8 +154,6 @@ To use PHP-CS-Fixer:
 	```
 
 - If you want to pair it with your favorite text editor, [dedicated plugins](2) exist for just this.
-
-<div id="credits"></div>
 
 [1]: http://cs.sensiolabs.org
 [2]: http://cs.sensiolabs.org/#helpers
