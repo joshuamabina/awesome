@@ -90,6 +90,7 @@
 		- **refactor:** refactor production code
 		- **test:** refactor tests; no code change
 		- **chore:** update build tasks, configs, etc; no code change
+		- **wip:** work in progress
 
 - The commit title should be followed with a blank line and more thorough description.
 
