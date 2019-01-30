@@ -83,14 +83,15 @@
 
 	- The type can be one of these:
 
+		- **dia:** add/update diagram i.e. flow, class e.t.c.
+		- **wip:** work in progress (rebase, to collapse)
 		- **fix:** fix bug issue
+		- **doc:** change documentation
 		- **feat:** add a new feature
-		- **docs:** change documentation
-		- **style:** format code; no code change
-		- **refactor:** refactor production code
-		- **test:** refactor tests; no code change
+		- **test:** add tests; not code change
+		- **style:** format code; not code/test change
 		- **chore:** update build tasks, configs, etc; no code change
-		- **wip:** work in progress
+		- **refactor:** refactor production code; not test or doc change
 
 - The commit title should be followed with a blank line and more thorough description.
 
