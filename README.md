@@ -13,9 +13,6 @@ A curated list of awesome things.
 
 ## JavaScript
 
-- Packages
-	-
-
 - Stater Kits & Generators
 	- [Express Generator](https://expressjs.com/en/starter/generator.html) - Generates an express application skeleton.
 
