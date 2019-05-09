@@ -10,6 +10,7 @@ A curated list of awesome things.
 - [Git Tips](https://github.com/git-tips/tips)
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/#summary) - A specification for adding human and machine readable meaning Git commit messages.
 - [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html)
+- [Understanding the GitHub flow](https://guides.github.com/introduction/flow/) - A 5 minute read to get you up and running with the kickass GitHub flow.
 
 ## JavaScript
 
