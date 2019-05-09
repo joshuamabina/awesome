@@ -13,6 +13,9 @@ A curated list of awesome things.
 
 ## JavaScript
 
+- Packages
+	- [vesIn/todo](https://github.com/vesln/todo) - Todos in the CLI like what.
+
 - Stater Kits & Generators
 	- [Express Generator](https://expressjs.com/en/starter/generator.html) - Generates an express application skeleton.
 
