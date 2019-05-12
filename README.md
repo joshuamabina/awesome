@@ -20,6 +20,8 @@ A curated list of awesome things.
 - Talks
 	- [Introduction to Git with Scott Chacon of GitHub](https://www.youtube.com/watch?v=ZDR433b0HJY)
 	- [Tech Talk: Linus Torvalds on Git](https://www.youtube.com/watch?v=4XpnKHJAok8)
+	- [Advanced Git Tutorial](https://www.youtube.com/watch?v=0SJCYPsef54)
+	- [Git from the Bits Up](https://www.youtube.com/watch?v=MYP56QJpDr4)
 
 - Cheatsheets & Tips
 	- [Git Tips](https://github.com/git-tips/tips)
