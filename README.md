@@ -1,8 +1,6 @@
 # Awesome
 
-A curated list of awesome things.
-
-> wip
+**wip** A curated list of awesome things.
 
 ## Git & GitHub
 
@@ -25,6 +23,7 @@ A curated list of awesome things.
 
 - Cheatsheets & Tips
 	- [Git Tips](https://github.com/git-tips/tips)
+	- [Git & Git Flow Cheatsheet](http://bilalarslan.me/git-cheat-sheet)
 
 ## JavaScript
 
