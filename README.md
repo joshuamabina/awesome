@@ -49,6 +49,9 @@
 
 - Talks
 	- [How to Do 90% of What Plugins Do (With Just Vim)](https://youtu.be/XA2WjJbmmoM)
+	- Improving Vim Speed https://youtu.be/OnUiHLYZgaA
+	- Intermediate Vim - https://youtu.be/v0W7JkzQAzA - Getting more out of the Vim text editor.
+	- vim + tmux - https://youtu.be/5r6yzFEXajQ - A talk given at OMG!Code on 2015-02-24.
 
 - People
 	- [Tim Pope](https://twitter.com/tpope) - Vim plugin artist
