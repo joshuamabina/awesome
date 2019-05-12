@@ -38,3 +38,14 @@
 	- [Eloquent JavaScript](https://eloquentjavascript.net/)
 	- [JavaScript: The Good Parts](https://www.oreilly.com/library/view/javascript-the-good/9780596517748/)
 	- [Principles of Object-Oriented JavaScript](https://www.oreilly.com/library/view/the-principles-of/9781457185304/)
+
+## Vim
+
+- Intro to Vim
+	- [Mastering Vim Quickly](https://jovicailic.org/mastering-vim-quickly)
+
+- Deep Dive into Vim
+	- [Practical Vim](https://pragprog.com/book/dnvim/practical-vim)
+
+- Talks
+	- [How to Do 90% of What Plugins Do (With Just Vim)](https://youtu.be/XA2WjJbmmoM)
