@@ -49,3 +49,11 @@
 
 - Talks
 	- [How to Do 90% of What Plugins Do (With Just Vim)](https://youtu.be/XA2WjJbmmoM)
+
+- People
+	- [Tim Pope](https://twitter.com/tpope) - Vim plugin artist
+	- Joe Ferris
+	- Ben Orenstein
+	- Nick Nissi
+	- Daniel Weibel
+	- Drew Neil
