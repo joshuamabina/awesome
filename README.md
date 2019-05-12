@@ -56,11 +56,8 @@
 
 - People
 	- [Tim Pope](https://twitter.com/tpope) - Vim plugin artist
-	- Joe Ferris
-	- Ben Orenstein
-	- Nick Nissi
-	- Daniel Weibel
-	- Drew Neil
+	- [Drew Neil](https://twitter.com/nelstrom) - Voice of Vimcasts.
+	- [Jovica Ilic](https://twitter.com/jovica) - Author of Mastering Vim.
 
 - Cheatsheets & Tips
-	- Vim Cheatsheet - http://vimcheatsheet.com/
+	- [Vim Cheatsheet](https://twitter.com/steve_verm)
