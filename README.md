@@ -10,7 +10,7 @@
 	- [How to GitHub](https://www.gun.io/blog/how-to-github-fork-branch-and-pull-request) - Fork, Branch, Track, Squash and Pull Request
 	- [Understanding the GitHub flow](https://guides.github.com/introduction/flow/) - A 5 minute read to get you up and running with the kickass GitHub flow.
 
-- Deep Dive to Git & GitHub
+- Deep Dive into Git & GitHub
 	- [ProGit](https://git-scm.com/book/en/v2) - An entire Git book written by Scott Chacon and Ben Straub.
 	- [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html) - What is GitHub Flow? Issues with Git flow by Scott Chacon.
 	- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/#summary) - A specification for adding human and machine readable meaning Git commit messages.
