@@ -46,6 +46,7 @@
 
 - Deep Dive into Vim
 	- [Practical Vim](https://pragprog.com/book/dnvim/practical-vim)
+	- [Registers: the Good, the Bad, and the Ugly Parts](http://vimcasts.org/blog/2013/11/registers-the-good-the-bad-and-the-ugly-parts/)
 
 - Talks
 	- [How to Do 90% of What Plugins Do (With Just Vim)](https://youtu.be/XA2WjJbmmoM)
