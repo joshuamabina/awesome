@@ -61,3 +61,6 @@
 	- Nick Nissi
 	- Daniel Weibel
 	- Drew Neil
+
+- Cheatsheets & Tips
+	- Vim Cheatsheet - http://vimcheatsheet.com/
