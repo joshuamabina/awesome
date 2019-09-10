@@ -46,21 +46,19 @@
 
 - Deep Dive into Vim
 	- [Practical Vim](https://pragprog.com/book/dnvim/practical-vim)
+	- [Vim pr0n: Making statuslines that own](https://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html) - A meaningful statusline.
 	- [Registers: the Good, the Bad, and the Ugly Parts](http://vimcasts.org/blog/2013/11/registers-the-good-the-bad-and-the-ugly-parts/)
 
 - Talks
-	- [How to Do 90% of What Plugins Do (With Just Vim)](https://youtu.be/XA2WjJbmmoM)
-	- Improving Vim Speed https://youtu.be/OnUiHLYZgaA
-	- Intermediate Vim - https://youtu.be/v0W7JkzQAzA - Getting more out of the Vim text editor.
-	- vim + tmux - https://youtu.be/5r6yzFEXajQ - A talk given at OMG!Code on 2015-02-24.
+	- [Improving Vim Speed](https://youtu.be/OnUiHLYZgaA) - Video showcasing little nuggets to speed up your vimming.
+	- [Intermediate Vim](https://youtu.be/v0W7JkzQAzA) - Getting more out of the Vim text editor.
+	- [vim + tmux](https://youtu.be/5r6yzFEXajQ) - A talk that will undoubtely get you to use vim and tmux.
+	- [How to Do 90% of What Plugins Do (With Just Vim)](https://youtu.be/XA2WjJbmmoM) - A talk that will force you to learn vim.
 
 - People
 	- [Tim Pope](https://twitter.com/tpope) - Vim plugin artist
-	- Joe Ferris
-	- Ben Orenstein
-	- Nick Nissi
-	- Daniel Weibel
-	- Drew Neil
+	- [Drew Neil](https://twitter.com/nelstrom) - Voice of Vimcasts.
+	- [Jovica Ilic](https://twitter.com/jovica) - Author of Mastering Vim.
 
 - Cheatsheets & Tips
-	- Vim Cheatsheet - http://vimcheatsheet.com/
+	- [Vim Cheatsheet](https://twitter.com/steve_verm)
