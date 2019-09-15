@@ -35,6 +35,7 @@ My curated list of awesome things.
 - Head-first into Vim
 	- [Mastering Vim Quickly](https://jovicailic.org/mastering-vim-quickly)
 	- [Practical Vim](https://pragprog.com/book/dnvim/practical-vim)
+	- [Vim pr0n: Making statuslines that own](https://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html) - A meaningful statusline.
 	- [Registers: the Good, the Bad, and the Ugly Parts](http://vimcasts.org/blog/2013/11/registers-the-good-the-bad-and-the-ugly-parts/)
 
 - Talks
