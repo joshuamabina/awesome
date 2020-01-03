@@ -1,0 +1,21 @@
+{
+  "name": "mljs-crash-course",
+  "version": "1.0.0",
+  "description": "Dive into Machine Learning w/ JavaScript",
+  "main": "main.js",
+  "dependencies": {
+    "ml-cart": "^2.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/preset-env": "^7.7.7"
+  },
+  "scripts": {
+    "start": "babel-node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua Mabina (mabinajoshua@gmail.com)",
+  "license": "WTFPL"
+}
