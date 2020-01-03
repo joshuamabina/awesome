@@ -4,7 +4,7 @@ My curated list of awesome things.
 
 ## Git & GitHub
 
-- Head-first into Git & GitHub
+- Dive into Git & GitHub
 	- [Simple Guide](https://rogerdudler.github.io/git-guide/) - Just a simple guide for getting started with Git. No deep shit ;)
 	- [Git Handbook](https://guides.github.com/introduction/git-handbook/) - 10 minute read about Git & GitHub.
 	- [How to GitHub](https://www.gun.io/blog/how-to-github-fork-branch-and-pull-request) - Fork, Branch, Track, Squash and Pull Request
@@ -21,7 +21,7 @@ My curated list of awesome things.
 
 ## JavaScript
 
-- Head-first into JavaScript
+- Dive into JavaScript
 	- [Eloquent JavaScript](https://eloquentjavascript.net/)
 	- [JavaScript: The Good Parts](https://www.oreilly.com/library/view/javascript-the-good/9780596517748/)
 	- [Principles of Object-Oriented JavaScript](https://www.oreilly.com/library/view/the-principles-of/9781457185304/)
@@ -32,7 +32,7 @@ My curated list of awesome things.
 
 ## Vim
 
-- Head-first into Vim
+- Dive into Vim
 	- [Mastering Vim Quickly](https://jovicailic.org/mastering-vim-quickly)
 	- [Practical Vim](https://pragprog.com/book/dnvim/practical-vim)
 	- [Vim pr0n: Making statuslines that own](https://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html) - A meaningful statusline.
