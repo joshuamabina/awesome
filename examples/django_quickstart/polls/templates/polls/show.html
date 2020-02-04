@@ -1,0 +1,57 @@
+<!-- django_quickstart/polls/templates/polls/show.html -->
+
+{% extends "polls/base.html" %}
+
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-offset-2 col-sm-8">
+
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title"> 
+            <h5>Have you noticed any impact to your life since you started smoking weed?</h5>
+            <p class="text-muted">Latest vote &nbsp; <a href="#">21fbc2a</a> &nbsp; 5 days ago &nbsp; <span class="badge badge-pill badge-success">open</span></p>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              25% &nbsp; Nope; nothing yet.
+            </div>
+          </div>
+
+          <br>
+
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              75% &nbsp; Hooyah! My rankings went up.
+            </div>
+          </div>
+
+          <br>
+
+          <small class="text-muted">546 votes</small>
+        </div>
+      </div>
+
+      <br>
+
+      <pre>
+        Data:
+
+        - question_text: {{ poll.question_text }}
+
+        Pending:
+
+        - Vote progress
+        - Edit poll
+        - Delete poll
+      </pre>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+

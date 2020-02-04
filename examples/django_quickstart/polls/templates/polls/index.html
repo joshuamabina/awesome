@@ -1,0 +1,123 @@
+<!-- django_quickstart/polls/templates/polls/index.html -->
+
+{% extends "polls/base.html" %}
+
+{% block content %}
+
+<div class="container">
+
+  <!-- New Poll -->
+
+  <div class="row">
+    <div class="col-sm-offset-2 col-sm-8">
+
+      <h5>Create a new poll</h5>
+
+      <p class="text-muted">
+        A poll is something that has nothing to do with what the people/country needs.
+      </p>
+
+      <hr>
+
+      <!-- Display Validation Errors -->
+      <!-- @include('common.errors') -->
+
+      <!-- New Poll Form -->
+      <form action="#" method="POST" class="form-horizontal">
+        <!--csrf_field()-->
+
+        <!-- Poll Title -->
+        <div class="form-group">
+          <label for="question-text" class="col-sm-3 control-label">
+            Ask a question
+          </label>
+
+          <div class="col-sm-6">
+            <input type="text" name="question_text" id="question-text" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="choice-text-1" class="col-sm-3 control-label">
+            Choice 1
+          </label>
+
+          <div class="col-sm-6">
+            <input type="text" name="choices" id="choice-text-1" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="choice-text-2" class="col-sm-3 control-label">
+            Choice 2 
+          </label>
+
+          <div class="col-sm-6">
+            <input type="text" name="choices" id="choice-text-2" class="form-control">
+          </div>
+        </div>
+
+        <!-- Add Poll Button -->
+        <div class="form-group">
+          <div class="col-sm-6">
+            <button type="submit" class="btn btn-secondary">
+              Create poll 
+            </button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Poll List -->
+
+  <div class="row">
+    <div class="col-sm-offset-2 col-sm-8">
+
+      <h5>Polls <small><span class="badge badge-pill badge-secondary">{{ polls | length }}</span></small></h5>
+
+      <p class="text-muted">
+        Polls help show what the people/country wants.
+      </p>
+
+      <div class="row">
+        <div class="col-sm-offset-2 col-sm-8">
+          <strong>0</strong> results for all polls.
+        </div>
+      </div>
+
+      <br>
+
+      {% if polls %}
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Question</th>
+            <th>Vote Counts</th>
+            <th>Days Left</th>
+          </tr>
+        </thead>
+
+        {% for item in polls %}
+        <tbody>
+          <tr>
+            <td>21fbc2a</td>
+            <td><a href="{% url 'show' item.id %}"><strong>{{ item.question_text }}</strong></a></td>
+            <td>0 votes</td>
+            <td>0 days left</td>
+          </tr>
+        </tbody>
+        {% endfor %}
+      </table>
+      {% endif %}
+        
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
