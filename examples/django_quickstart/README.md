@@ -62,6 +62,8 @@ To be completed:
 
 - [ ] Create a view to add a new poll
 - [ ] Create a view to list available polls  
+- [ ] Create a view to display poll details
+- [ ] Store new poll 
 
 Flex up:
 

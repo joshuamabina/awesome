@@ -23,8 +23,8 @@
       <!-- @include('common.errors') -->
 
       <!-- New Poll Form -->
-      <form action="#" method="POST" class="form-horizontal">
-        <!--csrf_field()-->
+      <form method="POST" action="{% url 'polls:store' %}" class="form-horizontal">
+        {% csrf_token %}
 
         <!-- Poll Title -->
         <div class="form-group">
@@ -106,7 +106,7 @@
         <tbody>
           <tr>
             <td>21fbc2a</td>
-            <td><a href="{% url 'show' item.id %}"><strong>{{ item.question_text }}</strong></a></td>
+            <td><a href="{% url 'polls:show' item.id %}"><strong>{{ item.question_text }}</strong></a></td>
             <td>0 votes</td>
             <td>0 days left</td>
           </tr>
