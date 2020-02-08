@@ -13,7 +13,7 @@
         <div class="card-body">
           <div class="card-title">
             <h5>{{ poll.question_text }} &nbsp; <span class="badge badge-pill badge-success">open</span></h5>
-            <p class="text-muted">Last vote &nbsp; {{ poll.created_at|timesince|capfirst }}  ago &nbsp; </p>
+            <p class="text-muted">Last vote &nbsp; {{ poll.created_at|timesince|capfirst }} ago &nbsp; </p>
           </div>
 
           {% if poll.closed_at %}
@@ -46,6 +46,8 @@
           {% endfor %}
 
           {% endif %}
+
+          <button type="button">Close poll</button>
 
           <br>
 

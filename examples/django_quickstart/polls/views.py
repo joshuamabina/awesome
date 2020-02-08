@@ -19,11 +19,8 @@ def show(request, question_id):
   return render(request, 'polls/show.html', context)
 
 def store(request):
-  question = request.POST['question_text']
-  choices = request.POST['choices']
-
   # Save new question
-  question = Question(question_text=question)
+  question = Question(question_text=request.POST['question_text'])
   question.save()
 
   # Save all choices for question above
