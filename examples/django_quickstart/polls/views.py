@@ -8,7 +8,14 @@ def index(request):
   return render(request, 'polls/index.html', context)
 
 def show(request, question_id):
-  context = { 'poll': {}}
+  question = Question.objects.filter(pk=question_id).get()
+  choices = Choice.objects.filter(question=question)
+
+  total_votes = 0
+  for choice in choices:
+    total_votes += choice.votes;
+
+  context = { 'poll': question, 'choices': choices, 'total_votes': total_votes }
   return render(request, 'polls/show.html', context)
 
 def store(request):
@@ -25,4 +32,18 @@ def store(request):
     choice.save()
 
   return redirect('polls:index')
+
+def vote(request, question_id):
+  selected_choice_id = request.POST['choice_id']
+
+  question = Question.objects.filter(pk=question_id).get()
+
+  selected_choice = Choice.objects.filter(question=question, pk=selected_choice_id).get()
+
+  selected_choice.votes += 1
+  selected_choice.save()
+
+  print(selected_choice.votes)
+
+  return redirect('polls:show', question.id)
 

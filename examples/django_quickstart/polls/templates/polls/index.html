@@ -97,8 +97,7 @@
           <tr>
             <th>#</th>
             <th>Question</th>
-            <th>Vote Counts</th>
-            <th>Days Left</th>
+            <th>Created At</th>
           </tr>
         </thead>
 
@@ -107,8 +106,7 @@
           <tr>
             <td>{{ item.unique_id|truncatechars:7 }}</td>
             <td><a href="{% url 'polls:show' item.id %}"><strong>{{ item.question_text }}</strong></a></td>
-            <td>0 votes</td>
-            <td>0 days left</td>
+            <td>{{ item.created_at|timesince|capfirst }}</td>
           </tr>
         </tbody>
         {% endfor %}
