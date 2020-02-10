@@ -22,7 +22,7 @@ Suprise me! 🙈
 
 **What awesome thing are we building now?**
 
-A polling app - like on the [officical documentation]().
+A polling app - like on the [officical documentation](https://docs.djangoproject.com/en/3.0/).
 
 See [demo](https://[django_quickstart].herokuapp.com).
 
@@ -32,6 +32,7 @@ Before you start
 
 - [ ] Install python3 
 - [ ] Install pip3
+- [ ] [optional], Simply, install [virtualenvwrapper](https://medium.com/the-andela-way/configuring-python-environment-with-virtualenvwrapper-8745c2895745) to stop swearing so damn much.
 
 Installing Django
 
