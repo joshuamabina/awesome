@@ -32,16 +32,12 @@ Before you start
 
 - [ ] Install python3 
 - [ ] Install pip3
-- [ ] [optional], Simply, install [virtualenvwrapper](https://medium.com/the-andela-way/configuring-python-environment-with-virtualenvwrapper-8745c2895745) to stop swearing so damn much.
+- [ ] [optional], Simply, install [virtualenvwrapper](https://medium.com/the-andela-way/configuring-python-environment-with-virtualenvwrapper-8745c2895745) and stop swearing so damn much.
 
 Installing Django
 
-- [ ] Use pip3 to install Django
-
-### Using the Quickstart Boilerplate (Optional)
-
-- [ ] Optionally, you can download the quickstart in this guide. 
-- [ ] Optionally, [self promotion stuff].
+- [ ] Use pip to install Django.
+- [ ] Use `pip freeze` to populate `requirements.txt` file. 
 
 ### Prepping the Database
 
@@ -57,7 +53,7 @@ To be completed:
 - [ ] Activate polls models
 - [ ] Create database migrations for polls app
 
-### Create a New Poll
+### Managing Polls
 
 To be completed:
 
@@ -65,9 +61,5 @@ To be completed:
 - [ ] Create a view to list available polls  
 - [ ] Create a view to display poll details
 - [ ] Store new poll 
-
-Flex up:
-
-- Close poll
-- Filter polls based on status i.e. open or closed.
-- Set poll deadline so that poll can automatically close beyond the timeline.
+- [ ] Close poll
+- [ ] Delete poll
