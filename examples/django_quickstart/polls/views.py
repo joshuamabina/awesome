@@ -36,16 +36,15 @@ def store(request):
     return redirect('polls:index')
 
 def vote(request, question_id):
-  selected_choice_id = request.POST['choice_id'].queryset
+  if request.method == 'POST':
+    selected_choice_id = request.POST.get('choice_id')
+    question = Question.objects.filter(pk=question_id).get()
 
-  question = Question.objects.filter(pk=question_id).get()
+    selected_choice = Choice.objects.filter(question=question, pk=selected_choice_id).get()
 
-  selected_choice = Choice.objects.filter(question=question, pk=selected_choice_id).get()
-
-  selected_choice.votes += 1
-  selected_choice.save()
-
-  print(selected_choice.votes)
+    selected_choice.votes += 1
+    selected_choice.save()
+    print(selected_choice.votes)
 
   return redirect('polls:show', question.id)
 
