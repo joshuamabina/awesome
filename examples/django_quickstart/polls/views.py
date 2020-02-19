@@ -1,3 +1,4 @@
+from django import forms
 from django.shortcuts import redirect, render
 from django.http import HttpResponse
 
@@ -19,28 +20,31 @@ def show(request, question_id):
   return render(request, 'polls/show.html', context)
 
 def store(request):
-  # Save new question
-  question = Question(question_text=request.POST['question_text'])
-  question.save()
+  if request.method == 'POST':
+    question_text = request.POST.get('question_text')
+    choices = request.POST.getlist('choices')
 
-  # Save all choices for question above
-  for choice in choices:
-    choice = Choice(question=question, choice_text=choice)
-    choice.save()
+    # Save new question
+    question = Question(question_text=request.POST['question_text'])
+    question.save()
 
-  return redirect('polls:index')
+    # Save all choices for question above
+    for choice in choices:
+      choice = Choice(question=question, choice_text=choice)
+      choice.save()
+
+    return redirect('polls:index')
 
 def vote(request, question_id):
-  selected_choice_id = request.POST['choice_id']
+  if request.method == 'POST':
+    selected_choice_id = request.POST.get('choice_id')
+    question = Question.objects.filter(pk=question_id).get()
 
-  question = Question.objects.filter(pk=question_id).get()
+    selected_choice = Choice.objects.filter(question=question, pk=selected_choice_id).get()
 
-  selected_choice = Choice.objects.filter(question=question, pk=selected_choice_id).get()
-
-  selected_choice.votes += 1
-  selected_choice.save()
-
-  print(selected_choice.votes)
+    selected_choice.votes += 1
+    selected_choice.save()
+    print(selected_choice.votes)
 
   return redirect('polls:show', question.id)
 

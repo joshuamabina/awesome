@@ -19,13 +19,6 @@
       .app-layout {
         padding: 3rem 1.5rem;
       }
-      .fa-btn {
-        margin-right: 6px;
-      }
-      .progress-bar {
-        text-align: left;
-        padding: 1%;
-      }
     </style>
   </head>
 
@@ -43,9 +36,19 @@
     </nav>
 
     <main class="app-layout">
+      <h1>Writing Your First Django App | A Basic Checklist</h1>
 
-      {% block content %}{% endblock content %}
+      <p>
+        This is intended for a lazy as f@$k, programmer who just wants to get up and running with the Django framework. You can use this to make sure you have checked the important boxes. <br>
 
+        I have written this also, because, I think the official documentation gets into a so much crap before one has even gotten a grasp of what the framework really is. ¯\(°_o)/¯
+      </p>
+
+      <ul>
+        <li><a href="https://docs.djangoproject.com/en/3.0/intro/tutorial01/">Django Official Documentation</a></li>
+        <li><a href="https://github.com/joshuamabina/awesome/examples/django_quickstart">Basic Checklist</a></li>
+        <li><a href="{% url 'polls:index' %}">Polls</a></li>
+      </ul>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
