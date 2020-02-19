@@ -1,0 +1,56 @@
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>First Django App | Basic Checklist</title>
+
+    <!-- Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
+
+    <!-- CSS And JavaScript -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+      body {
+        font-family: 'Lato';
+      }
+      .app-layout {
+        padding: 3rem 1.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- Branding Image -->
+
+          <a class="navbar-brand" href="{% url 'polls:index' %}">
+            Polls | <small>A poll is something that supposedly shows what the majority of the people want.</small>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="app-layout">
+      <h1>Writing Your First Django App | A Basic Checklist</h1>
+
+      <p>
+        This is intended for a lazy as f@$k, programmer who just wants to get up and running with the Django framework. You can use this to make sure you have checked the important boxes. <br>
+
+        I have written this also, because, I think the official documentation gets into a so much crap before one has even gotten a grasp of what the framework really is. ¯\(°_o)/¯
+      </p>
+
+      <ul>
+        <li><a href="https://docs.djangoproject.com/en/3.0/intro/tutorial01/">Django Official Documentation</a></li>
+        <li><a href="https://github.com/joshuamabina/awesome/examples/django_quickstart">Basic Checklist</a></li>
+        <li><a href="{% url 'polls:index' %}">Polls</a></li>
+      </ul>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -16,6 +16,9 @@ Writing your first Django app | Basic Checklist for Lazy Programmers
 
 This is intended for a lazy as f@$k, programmer who just wants to get up and running with the Django framework. You can use this to make sure you have checked the important boxes.
 
+I have written this also, because, I think the official documentation gets into a so much crap before one has even gotten a grasp of what the framework really is. ¯\(°\_o)/¯
+
+
 **How long is gonna take me?**
 
 Suprise me! 🙈 
